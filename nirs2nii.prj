@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1902902150" file="D:\nirs2nii\nirs2nii.prj" location="D:\nirs2nii" name="nirs2nii" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3802319573" file="D:\nirs2nii\nirs2nii.prj" location="D:\nirs2nii" name="nirs2nii" target="target.mlapps" target-name="Package App">
     <param.appname>nirs2nii</param.appname>
     <param.authnamewatermark>Neel Patel</param.authnamewatermark>
     <param.email>neelpatel224@gmail.com</param.email>
