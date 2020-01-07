@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3802319573" file="D:\nirs2nii\nirs2nii.prj" location="D:\nirs2nii" name="nirs2nii" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1895910477" file="D:\nirs2nii\nirs2nii.prj" location="D:\nirs2nii" name="nirs2nii" target="target.mlapps" target-name="Package App">
     <param.appname>nirs2nii</param.appname>
     <param.authnamewatermark>Neel Patel</param.authnamewatermark>
     <param.email>neelpatel224@gmail.com</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description>Project the results of the nirsSPM analysis on a T1 image of a patient's brain anatomy.</param.description>
-    <param.screenshot>C:\Users\neelp\AppData\Local\Temp\tpf242a40d_db60_4d15_8ac2_033bc7187882.png</param.screenshot>
+    <param.screenshot />
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -17,9 +17,13 @@
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>e9155042-65e7-4cb0-9187-9c7e638f67c4</param.guid>
     <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
       <param.icon />
       <param.icons />
       <param.summary />
+      <param.screenshot />
       <param.version />
       <param.products.name />
       <param.products.id />

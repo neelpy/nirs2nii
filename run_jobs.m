@@ -1,4 +1,4 @@
-function [] = run_jobs(raw, tpm, channels)
+function [] = run_jobs(raw, tpm, std, channels)
 
     spm('defaults','fmri');
     spm_jobman('initcfg');
@@ -45,6 +45,14 @@ function [] = run_jobs(raw, tpm, channels)
     matlabbatch{2}.spm.spatial.normalise.write.woptions.vox = [1 1 1];
     matlabbatch{2}.spm.spatial.normalise.write.woptions.interp = 4;
     matlabbatch{2}.spm.spatial.normalise.write.woptions.prefix = 'w';
+    
+    matlabbatch{3}.spm.spatial.normalise.write.subj.def(1) = cfg_dep('Segment: Inverse Deformations', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','invdef', '()',{':'}));
+    matlabbatch{3}.spm.spatial.normalise.write.subj.resample = {strcat(std, ',1')};
+    matlabbatch{3}.spm.spatial.normalise.write.woptions.bb = [-78 -112 -70
+                                                              78 76 85];
+    matlabbatch{3}.spm.spatial.normalise.write.woptions.vox = [2 2 2];
+    matlabbatch{3}.spm.spatial.normalise.write.woptions.interp = 4;
+    matlabbatch{3}.spm.spatial.normalise.write.woptions.prefix = 'w';
 
     spm_jobman('run',matlabbatch);
 
